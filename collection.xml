@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<extensionset name="Dummy Component Updates" description="Dummy Component">
-    <extension name="Dummy Component" element="com_dummy" type="component" client="administrator" version="1.1.0" detailsurl="http://akeebatest.s3.amazonaws.com/dummy/update.xml" />
-    <extension name="Dummy Component" element="com_dummy" type="component" client="administrator" version="1.2.0.a1" detailsurl="http://akeebatest.s3.amazonaws.com/dummy/update.xml" />
-</extensionset>

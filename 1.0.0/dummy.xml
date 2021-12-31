@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="4.0" type="component" method="upgrade">
+    <name>COM_DUMMY</name>
+    <creationDate>2021-12-31</creationDate>
+    <author>Nicholas K. Dionysopoulos</author>
+    <authorEmail>no-reply@dionysopoulos.me</authorEmail>
+    <authorUrl>https://www.dionysopoulos.me</authorUrl>
+    <copyright>Copyright (c)2021 Nicholas K. Dionysopoulos</copyright>
+    <license>GNU GPL v3 or later</license>
+    <version>1.0.0</version>
+    <description>COM_DUMMY_XML_DESCRIPTION</description>
+
+    <files folder="site">
+        <filename>dummy.php</filename>
+    </files>
+
+    <administration>
+        <menu view="main">COM_DUMMY</menu>
+
+        <files folder="admin">
+            <folder>sql</folder>
+            <filename>dummy.php</filename>
+        </files>
+
+        <languages folder="language/admin">
+            <language tag="en-GB">en-GB/com_dummy.ini</language>
+            <language tag="en-GB">en-GB/com_dummy.sys.ini</language>
+        </languages>
+    </administration>
+
+    <install>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+
+    <uninstall>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+
+    <update>
+        <schemas>
+            <schemapath type="mysql">sql/updates/mysql</schemapath>
+        </schemas>
+    </update>
+
+    <!-- Update servers -->
+    <updateservers>
+        <server type="extension" priority="1" name="Dummy Component">https://raw.githubusercontent.com/nikosdion/com_dummy/main/update.xml</server>
+    </updateservers>
+</extension>
