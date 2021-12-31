@@ -1,0 +1,1 @@
+-- No operation; just versioning the database schema
